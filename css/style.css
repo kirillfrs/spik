@@ -1459,12 +1459,21 @@ h2 {
 }
 
 @media (max-width: 1199px) {
+  .container {
+    max-width: 990px;
+  }
+
   .header__logo {
-    margin-right: 60px;
+    margin-right: 40px;
   }
 
   .form__input {
-    max-width: 300px;
+    max-width: 280px;
+  }
+
+  .doctors__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1874,6 +1883,11 @@ h2 {
     margin-bottom: 50px;
   }
 
+  .service__item:last-child {
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+  }
+
   .service__title {
     font-size: 22px;
     line-height: 26px;
@@ -1888,6 +1902,8 @@ h2 {
     padding: 12px 85px;
     font-size: 12px;
     line-height: 15px;
+    width: 100%;
+    margin-bottom: 30px;
   }
 
   .services-block__wrapper-full-list {
@@ -1961,6 +1977,9 @@ h2 {
   }
 
   .doctors__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }

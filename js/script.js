@@ -67,15 +67,27 @@ const swiper = new Swiper('.doctors__wrap', {
 
 const sliderWrapper = document.querySelector('.doctors__wrap');
 const sliderItems = document.querySelectorAll('.doctors__item');
-const screenWidth = window.screen.width;
+// const screenWidth
 
 const delSliderItem = () => {
-  if (screenWidth > 700) {
+  const screenWidth = window.screen.width;
+  if (screenWidth > 769) {
+    // console.log(screenWidth);
+    // console.log('>769');
     // sliderWrapper.classList.remove('swiper-container');
     sliderItems.forEach(item => item.classList.remove('swiper-slide'));
     sliderItems.forEach(item => item.style = "");
     swiper.destroy();
+  } else {
+    // console.log(screenWidth);
+
+    // console.log('<769');
+
+    sliderItems.forEach(item => item.classList.add('swiper-slide'));
   }
 };
+
 delSliderItem();
+setInterval(delSliderItem, 1500);
+
 ;
