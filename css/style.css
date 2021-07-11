@@ -384,6 +384,14 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "FuturaFuturisC";
+  font-display: swap;
+  src: url("../fonts/FuturaFuturisC.woff") format("woff"), url("../fonts/FuturaFuturisC.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*project colors*/
 
 html {
@@ -508,14 +516,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@font-face {
-  font-family: "FuturaFuturisC";
-  font-display: swap;
-  src: url("../fonts/FuturaFuturisC.woff") format("woff"), url("../fonts/FuturaFuturisC.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
 }
 
 .header {
