@@ -1475,6 +1475,10 @@ h2 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+
+  .trust__block--left {
+    width: 300px;
+  }
 }
 
 @media (max-width: 991px) {
